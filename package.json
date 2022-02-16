@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-map5d",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Apply a function to each nested element in a five-dimensional nested array and assign the result to a nested element in a new five-dimensional nested array.",
   "license": "Apache-2.0",
   "author": {
