@@ -43,6 +43,7 @@
     "@stdlib/types": "^0.0.14"
   },
   "devDependencies": {
+    "@stdlib/array-base-filled5d-by": "^0.0.1",
     "@stdlib/array-filled-by": "^0.0.2",
     "@stdlib/array-float64": "^0.0.6",
     "@stdlib/assert-is-array-array": "^0.0.7",
