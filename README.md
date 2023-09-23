@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import map5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map5d@deno/mod.js';
+import map5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map5d@v0.1.0-deno/mod.js';
 ```
 
 #### map5d( arr, fcn\[, thisArg] )
@@ -131,7 +131,7 @@ import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by
 var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
 import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@deno/mod.js';
 import abs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs2@deno/mod.js';
-import map5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map5d@deno/mod.js';
+import map5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map5d@v0.1.0-deno/mod.js';
 
 function fill( n ) {
     if ( n > 0 ) {
