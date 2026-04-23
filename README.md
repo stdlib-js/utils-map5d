@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-map5d
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import map5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map5d@esm/index.mjs';
+var map5d = require( '@stdlib/utils-map5d' );
 ```
 
 #### map5d( arr, fcn\[, thisArg] )
@@ -60,8 +78,8 @@ import map5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map5d@esm/index.m
 Applies a function to each nested element in a five-dimensional nested array and assigns the result to a nested element in a new five-dimensional nested array.
 
 ```javascript
-import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@esm/index.mjs';
-import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@esm/index.mjs';
+var naryFunction = require( '@stdlib/utils-nary-function' );
+var abs = require( '@stdlib/math-base-special-abs' );
 
 var arr = [
     [ [ [ [ -1, -2, -3 ] ] ] ],
@@ -83,7 +101,7 @@ To set the `this` context when invoking the input function, provide a `thisArg`.
 <!-- eslint-disable no-invalid-this -->
 
 ```javascript
-import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@esm/index.mjs';
+var abs = require( '@stdlib/math-base-special-abs' );
 
 function fcn( v ) {
     this.count += 1;
@@ -126,17 +144,12 @@ var cnt = ctx.count;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@esm/index.mjs';
-var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
-import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@esm/index.mjs';
-import abs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs2@esm/index.mjs';
-import map5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map5d@esm/index.mjs';
+```javascript
+var filledarrayBy = require( '@stdlib/array-filled-by' );
+var discreteUniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
+var naryFunction = require( '@stdlib/utils-nary-function' );
+var abs2 = require( '@stdlib/math-base-special-abs2' );
+var map5d = require( '@stdlib/utils-map5d' );
 
 function fill( n ) {
     if ( n > 0 ) {
@@ -168,10 +181,6 @@ console.log( JSON.stringify( x, null, '  ' ) );
 
 console.log( 'y:' );
 console.log( JSON.stringify( y, null, '  ' ) );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -212,7 +221,7 @@ console.log( JSON.stringify( y, null, '  ' ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -277,13 +286,13 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/map]: https://github.com/stdlib-js/utils-map/tree/esm
+[@stdlib/utils/map]: https://github.com/stdlib-js/utils-map
 
-[@stdlib/utils/map2d]: https://github.com/stdlib-js/utils-map2d/tree/esm
+[@stdlib/utils/map2d]: https://github.com/stdlib-js/utils-map2d
 
-[@stdlib/utils/map3d]: https://github.com/stdlib-js/utils-map3d/tree/esm
+[@stdlib/utils/map3d]: https://github.com/stdlib-js/utils-map3d
 
-[@stdlib/utils/map4d]: https://github.com/stdlib-js/utils-map4d/tree/esm
+[@stdlib/utils/map4d]: https://github.com/stdlib-js/utils-map4d
 
 <!-- </related-links> -->
 
