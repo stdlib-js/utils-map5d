@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-27)
+## Unreleased (2026-05-31)
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`da8dc3b`](https://github.com/stdlib-js/stdlib/commit/da8dc3bf2cf7c75d899e53caa0b0629b992ca7e2) - correctly type callback indices as an array [(#12393)](https://github.com/stdlib-js/stdlib/pull/12393)
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="commits">
 
@@ -12,6 +22,7 @@
 
 <details>
 
+-   [`da8dc3b`](https://github.com/stdlib-js/stdlib/commit/da8dc3bf2cf7c75d899e53caa0b0629b992ca7e2) - **fix:** correctly type callback indices as an array [(#12393)](https://github.com/stdlib-js/stdlib/pull/12393) _(by Philipp Burckhardt)_
 -   [`19216fd`](https://github.com/stdlib-js/stdlib/commit/19216fd118234a4dd38792e9e1d8f982617a5795) - **bench:** refactor to use string interpolation in `utils` [(#11409)](https://github.com/stdlib-js/stdlib/pull/11409) _(by Karan Anand, Athan Reines)_
 
 </details>
@@ -24,10 +35,11 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Karan Anand
+-   Philipp Burckhardt
 
 </section>
 
