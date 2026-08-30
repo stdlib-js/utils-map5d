@@ -1,5 +1,0 @@
-"use strict";var q=function(i,r){return function(){try{return r||i((r={exports:{}}).exports,r),r.exports}catch(g){throw (r=0, g)}};};var V=q(function(A,T){
-var d=require('@stdlib/assert-is-array-like-object/dist'),I=require('@stdlib/assert-is-function/dist'),u=require('@stdlib/error-tools-fmtprodmsg/dist');function x(i,r,g){var f,h,p,w,y,s,v,o,m,c,b,E,F,S,e,a,t,n,l;if(!d(i))throw new TypeError(u('1Vf2O',i));if(!I(r))throw new TypeError(u('1Vf2H',r));for(c=i.length,f=[],e=0;e<c;e++){if(s=i[e],!d(s))throw new TypeError(u('1VfBR',e,s));for(b=s.length,h=[],a=0;a<b;a++){if(v=s[a],!d(v))throw new TypeError(u('1VfBS',e,a,v));for(E=v.length,p=[],t=0;t<E;t++){if(o=v[t],!d(o))throw new TypeError(u('1VfBT',e,a,t,o));for(F=o.length,w=[],n=0;n<F;n++){if(m=o[n],!d(m))throw new TypeError(u('1VfBU',e,a,t,n,m));for(S=m.length,y=[],l=0;l<S;l++)y.push(r.call(g,m[l],[e,a,t,n,l],i));w.push(y)}p.push(w)}h.push(p)}f.push(h)}return f}T.exports=x
-});var j=V();module.exports=j;
-/** @license Apache-2.0 */
-//# sourceMappingURL=index.js.map
